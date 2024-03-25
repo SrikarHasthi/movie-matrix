@@ -18,7 +18,7 @@ const Series = () => {
       `https://api.themoviedb.org/3/discover/tv?api_key=254760b6e3a54dddd855e0470f37f720&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}&with_genres=${genreforURL}`
     );
     setContent(data.results);
-    setNumOfPages(data.total_pages);
+    setNumOfPages(data.total_pages<=500 ? data.total_pages : 500);
     // console.log(data);
   };
 
