@@ -15,10 +15,10 @@ function App() {
       <div className="app">
         <Container>
           <Routes>
-            <Route path="/" element={<Trending />} />
-            <Route path="/movies" element={<Movies />} />
-            <Route path="/series" element={<Series />} />
-            <Route path="/search" element={<Search />} />
+            <Route path="/movie-matrix/trending" element={<Trending />} />
+            <Route path="/movie-matrix/movies" element={<Movies />} />
+            <Route path="/movie-matrix/series" element={<Series />} />
+            <Route path="/movie-matrix/search" element={<Search />} />
           </Routes>
         </Container>
       </div>

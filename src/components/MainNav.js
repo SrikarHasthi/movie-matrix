@@ -25,13 +25,13 @@ export default function SimpleBottomNavigation() {
 
   useEffect(() => {
     if (value === 0) {
-      navigate('/');
+      navigate('/movie-matrix/trending');
     } else if (value === 1) {
-      navigate('/movies');
+      navigate('/movie-matrix/movies');
     } else if (value === 2) {
-      navigate('/series');
+      navigate('/movie-matrix/series');
     } else if (value === 3) {
-      navigate('/search');
+      navigate('/movie-matrix/search');
     }
   }, [value, navigate]); 
 
